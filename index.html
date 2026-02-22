@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Life IQ Quiz</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+
+    <!-- Name Screen -->
+    <div id="nameBox">
+        <h1>🧠 Life IQ Quiz</h1>
+        <input type="text" id="username" placeholder="Enter your name">
+        <button onclick="startQuiz()">Start Quiz</button>
+    </div>
+
+    <!-- Quiz Screen -->
+    <div id="quizBox" class="hide">
+        <h2 id="question"></h2>
+        <div id="options"></div>
+        <button onclick="nextQuestion()">Next</button>
+    </div>
+
+    <!-- Result Screen -->
+    <div id="resultBox" class="hide">
+        <h1>📊 Result</h1>
+        <p id="finalScore"></p>
+        <h2 id="level"></h2>
+        <p id="roast"></p>
+
+        <h3>Answer Review</h3>
+        <div id="answerReview"></div>
+
+        <h2>🏆 Leaderboard</h2>
+        <ul id="leaderboard"></ul>
+    </div>
+
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
